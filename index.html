@@ -12,13 +12,15 @@
     nav a { margin: 0 10px; color: #005691; text-decoration: none; font-weight: bold; }
     .hero { background: #f4f4f4; padding: 40px 10px; text-align: center; }
     .hero p { font-size: 1.2em; }
-    .services, .contact { padding: 20px 10px; max-width: 800px; margin: auto; }
-    .services h2, .contact h2 { color: #005691; }
+    .services, .contact, .gallery { padding: 20px 10px; max-width: 800px; margin: auto; }
+    .services h2, .contact h2, .gallery h2 { color: #005691; }
     .services ul { list-style: none; padding: 0; }
     .services li { margin: 8px 0; }
     .contact p { margin: 8px 0; }
     footer { text-align: center; padding: 10px; background: #eee; font-size: 0.9em; }
     .btn-whatsapp { display: inline-block; margin: 10px 0; padding: 10px 20px; background: #25D366; color: #fff; text-decoration: none; border-radius: 5px; }
+    .gallery img { width: 100%; max-width: 250px; margin: 10px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+    .gallery-container { display: flex; flex-wrap: wrap; justify-content: center; }
   </style>
 </head>
 <body>
@@ -31,6 +33,7 @@
   <!-- Navigation -->
   <nav>
     <a href="#servicos">Serviços</a>
+    <a href="#galeria">Galeria</a>
     <a href="#contato">Contato</a>
   </nav>
 
@@ -53,11 +56,21 @@
     </ul>
   </section>
 
+  <!-- Gallery Section -->
+  <section id="galeria" class="gallery">
+    <h2>Galeria de Imagens</h2>
+    <div class="gallery-container">
+      <img src="https://images.unsplash.com/photo-1601050690591-3d1b04c3d042?auto=format&fit=crop&w=800&q=80" alt="Instalação elétrica">
+      <img src="https://images.unsplash.com/photo-1581091012184-5c1db86f18b5?auto=format&fit=crop&w=800&q=80" alt="Trabalho com fiação">
+      <img src="https://images.unsplash.com/photo-1625317755920-582b6d3f9ad1?auto=format&fit=crop&w=800&q=80" alt="Painel de disjuntores">
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section id="contato" class="contact">
     <h2>Entre em Contato</h2>
     <p>📞 Telefone/WhatsApp: <strong>(47) 99114-6083 </strong></p>
-    <a href="https://wa.me/55XXYYYYYYYY" class="btn-whatsapp" target="_blank">Chamar no WhatsApp</a>
+    <a href="https://wa.me/5547991146083" class="btn-whatsapp" target="_blank">Chamar no WhatsApp</a>
     <p>⏰ Domingo a Domingo 24hrs</p>
   </section>
 
@@ -65,6 +78,5 @@
   <footer>
     © 2025 Pedro Eletricista • Todos os direitos reservados
   </footer>
-
 </body>
 </html>
